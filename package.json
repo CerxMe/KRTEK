@@ -1,0 +1,15 @@
+{
+  "name": "krtek",
+  "version": "1.0.0",
+  "description": "",
+  "main": "apiCall.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "openai": "^3.2.1"
+  }
+}

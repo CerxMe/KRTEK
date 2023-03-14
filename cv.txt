@@ -1,0 +1,39 @@
+Osobní údaje:
+    Jméno a přijmení: Jára Cimrman
+    Datum narození: 23. června 1858
+    Místo narození: Kamenice nad Lipou
+    Státní příslušnost: česká
+
+Profesionální zkušenosti:
+    - Překladatel a lektor anglického jazyka
+    - Vynálezce a technický expert na mnoho oblastí
+    - Divadelní režisér, dramaturg, autor a herec
+    - Autor mnoha vědeckých a technických publikací
+
+Vzdělání:
+    - Základní škola: Základní škola v Kamenici nad Lipou
+    - Střední škola: Gymnázium Jana Nerudy v Praze
+    - Vysoká škola: Fakulta elektrotechniky na ČVUT v Praze
+
+Odborné dovednosti:
+    - Technické znalosti v oblasti elektrotechniky, matematiky, fyziky a dalších oblastí
+    - Schopnost vymýšlet a řešit složité problémy
+    - Silná improvizační schopnost a kreativita
+    - Vynikající herecké a divadelní schopnosti
+Jazykové znalosti:
+    Angličtina: plynulá znalost
+    Němčina: základní znalost
+    Ruština: základní znalost
+
+Zájmy a záliby:
+    - Divadlo
+    - Věda a technika
+    - Historie
+    - Literatura
+
+Osobnostní rysy:
+    - Skromný
+    - Samostatný
+    - Humoristický
+    - Kreativní
+    - Vzdělaný
