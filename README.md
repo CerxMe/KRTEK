@@ -9,7 +9,7 @@ Využívá speciální systémový [prompt](prompt.txt) pro modifikaci chování
 - Nainstalujte knihovny příkazem `npm install`
 ---
 ### Použití:
-Všechny data jsou uloženy v prostém textovém souboru pro jednoduché zpracování. Můžete použít speciální znaky nebo třeba Markdown pro
+Všechny data jsou uloženy v prostém textovém souboru pro jednoduché zpracování. Můžete použít speciální znaky nebo třeba Markdown pro strukturování životopisu.
 1. Uložte váš životopis do souboru `cv.txt`
 2. Zkopírujte text pracovního inzerátu do souboru `jobOffer.txt`
 3. Spusťe skript `node apiCall.js` a vyčkejte na dokončení operace 
