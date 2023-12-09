@@ -4,11 +4,20 @@ Využívá speciální [instrukce](src/prompt) pro modifikaci chování chatbota
 
 ### Použití:
 1. Upravte konfigurační soubor `conf.js`
-2. Strukturovaný životopis zpracujte jako prostý textový dokument a uložte `cv.txt` v hlavním adresáři.
-3. Nainstalujte [Node.js](https://nodejs.org/en/download/) a požadované balíčky příkazem `npm install`.
+2. Nahrajte strukturovaný životopis, zpracujte kritéria jako prostý textový dokument `cv.txt` a uložte v hlavním adresáři
+3. Nainstalujte [Node.js](https://nodejs.org/en/download/) *(odzkoušeno s v18)* a požadované balíčky příkazem `npm install`
 
-Samotný postup je poté rozdělen do několika stádií:
-- přečtu nejnovější nabídky, vyberu nejlepší
-- dále zobrazím podrobnosti a vygeneruji odpověďi
-- (*manuální kontrola*) - následně vyplním formulář a odešlu
+Samotný **postup** je poté rozdělen:
+- přečtu nejnovější nabídky
+- vyberu nejlepší
+- zobrazím podrobnosti
+- vygeneruji odpověďi
 
+`npm run krtek gen` -> uloží výstup do adresáře `/data`
+
+- (*manuální kontrola*) - zpracuj odpověď
+
+Generace jsou očíslované, obsahují původní text nabídky včetně odkazu.
+- vyplním formulář a odešlu
+
+`npm run krtek send <číslo>` měl by vám dorazit potvrzovací e-mail.

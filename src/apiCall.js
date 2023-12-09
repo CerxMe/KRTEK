@@ -1,5 +1,5 @@
 // Your API key
-import {conf} from 'conf.js'
+import {conf} from '../conf.js'
 import {Configuration, OpenAIApi} from 'openai';
 
 const configuration = new Configuration({

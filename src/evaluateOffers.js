@@ -11,8 +11,11 @@ export default async function (offers) {
         i++
         list += '\n'+ i +'. '+ o.title
     }
-    console.log(list)
+
+    //console.log(list + '\n')
+
     let retries = 0
+    let lastres = null
     do {
         retries++
 
@@ -47,6 +50,8 @@ export default async function (offers) {
             }
             return selection
         }
+        lastres = response
     } while (retries < 6)
     console.log('Evaluation Failed!')
+    return lastres
 }

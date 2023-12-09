@@ -1,17 +1,19 @@
 {
   "name": "krtek",
-  "version": "1.0.0",
-  "description": "",
-  "main": "src/index.js",
+  "version": "2.0.0",
+  "description": "Komerční Režisér Tvorby Ekonomických Kanálů",
+  "main": "src/cli.js",
   "type": "module",
   "scripts": {
-    "start": "node src/index.js"
+    "krtek": "node src/cli.js"
   },
-  "author": "",
-  "license": "ISC",
   "dependencies": {
     "openai": "^3.2.1",
     "puppeteer": "^21.6.0",
-    "turndown": "^7.1.2"
+    "turndown": "^7.1.2",
+    "yargs": "^17.1.1-candidate.0"
+  },
+  "devDependencies": {
+    "@types/yargs": "^17.0.32"
   }
 }
