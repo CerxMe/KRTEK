@@ -19,9 +19,9 @@ export default async function (page, cover) {
     await fileInput.uploadFile('cv.pdf')
 
     // submit the form
-    // await (await page.waitForSelector('#application-agreements-section')).scrollIntoView();
-    const submit = await page.waitForSelector('.Button .Button--primary .Button--large')
+    await (await page.waitForSelector('body > div.Container.Container--cassiopeia.mb-1200 > div > form > div.d-grid.d-tablet-block.mt-900.text-center > button')).scrollIntoView();
+    // const submit = await page.waitForSelector('Footer ')
     //submit.click()
-    console.log(submit)
+    // console.log(submit)
 }
 

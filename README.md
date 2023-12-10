@@ -5,7 +5,7 @@ Využívá speciální [instrukce](src/prompt) pro modifikaci chování chatbota
 ### Použití:
 1. Upravte konfigurační soubor `conf.js`
 2. Nahrajte strukturovaný životopis, zpracujte kritéria jako prostý textový dokument `cv.txt` a uložte v hlavním adresáři
-3. Nainstalujte [Node.js](https://nodejs.org/en/download/) *(odzkoušeno s v18)* a požadované balíčky příkazem `npm install`
+3. Nainstalujte [Node.js](https://nodejs.org/en/download/) *(zkoušeno na v18)* a požadované balíčky příkazem `npm install`
 
 Samotný **postup** je poté rozdělen:
 - přečtu nejnovější nabídky

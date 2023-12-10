@@ -8,7 +8,7 @@ export default async function(selection) {
     console.log('Reading details...')
     // get link
     const a = data.split('\n\n||||||\nVÝSTUP:\n||||||\n')
-    const cover = a[0]
+    const cover = a[1]
     const b = a[0].split('\n||||||\n')
     const c = b[0].split(' || ')
     const offerLink = c[0]
