@@ -24,4 +24,4 @@ Ty odpovíš textem motivačního dopisu pro danou pozici.
 
 1. Je zveřejněna nová pracovní nabídka
 2. Uchazeč o zaměstnání poskytne svůj životopis
-3. KRTEK napíše motivační dopis
+3. KRTEK napíše motivační dopis zastupující uchazeče (kandidát adresuje inzerát)

@@ -23,17 +23,23 @@ export default async function (offers) {
         const messages = [
             { role: "system", content: systemMessage },
             { role: "user", content: `ŽIVOTOPIS UCHAZEČE:\n${conf.cv} ` },
-            { role: "user", content: `PRACOVNÍ NADÍDKY:${list}\n[` },
+            { role: "user", content: `PRACOVNÍ NADÍDKY:${list}\n` },
+            { role: "assistant", content: `[` },
         ]
-        const response = (await apiCall(messages)).toString()
-        const enforceResponseFormat = /^\[(\d|,?|\s?)*\]/
+        const response = `[`+(await apiCall(messages)).toString()
+        console.log('Got: ' + response)
+
+        // I'm just being incredibly stupid and gave up at coming up with anything better for now:
+
+        const enforceResponseFormat = /^\[(\d|,?|\s?)*\]/ // strict [<num>, <num>]
         const valid = enforceResponseFormat.test(response)
+        let pattern = /\d+/gm;
         if ( valid ) {
             // parse
-            const pattern = /(\d+)[ ,]?/g
-            let m;
+            pattern = /(\d+)[ ,]?/gm
             const selection = []
 
+            let m
             while ((m = pattern.exec(response)) !== null) {
                 // This is necessary to avoid infinite loops with zero-width matches
                 if (m.index === pattern.lastIndex) {
@@ -49,9 +55,24 @@ export default async function (offers) {
                 });
             }
             return selection
+        } else { // backup just numbers
+            let m
+            while ((m = pattern.exec(response)) !== null) {
+                // This is necessary to avoid infinite loops with zero-width matches
+                if (m.index === pattern.lastIndex) {
+                    pattern.lastIndex++;
+                }
+
+                // The result can be accessed through the `m`-variable.
+                m.forEach((match, groupIndex) => {
+                    console.log(`Found match, group ${groupIndex}: ${match}`);
+                    selection.push(match)
+                });
+            }
+            return selection
         }
-        lastres = response
     } while (retries < 6)
+
+
     console.log('Evaluation Failed!')
-    return lastres
 }
