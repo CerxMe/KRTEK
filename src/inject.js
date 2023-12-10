@@ -1,1 +1,1 @@
-alert('hi')
+alert('Zkontroluj a odklepni!')

@@ -4,13 +4,14 @@ import evaluateOffers from "./evaluateOffers.js";
 import extractDetails from "./extractDetails.js"
 import generateCover from "./generateCover.js";
 import {save} from "./db.js"
-import {openPage} from "./browser.js"
+import {readPage} from "./browser.js"
 export default async function() {
-    console.log('Reading offers...')
-    const page = await openPage(conf.searchLink)
+    console.log('Reading latest offers...')
+    const page = await readPage(conf.searchLink)
     const offers = await getOffers(page)
 
     console.log('Cherrypicking...')
+    // TODO: "nothing new yet" / 
     const cherrypick = await evaluateOffers(offers)
     console.log(cherrypick)
 
@@ -29,6 +30,6 @@ export default async function() {
 
     setTimeout(async ()=> {
         await page.close()
-        console.log('Done. Run me again tomorrow.')
+        console.log('Done. ~ run again tomorrow.')
     }, 10*1000)
 }

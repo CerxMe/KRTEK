@@ -1,26 +1,28 @@
-import {conf} from "../conf.js";
-
 import {read} from "./db.js"
 import {openPage} from "./browser.js"
-
+import submitForm from "./submitForm.js";
 
 export default async function(selection) {
     console.log('Reading file...')
     const data = read(selection)
-    console.log(data)
     console.log('Reading details...')
     // get link
     const a = data.split('\n\n||||||\nVÝSTUP:\n||||||\n')
+    console.log(a)
     const cover = a[1]
     const b = a[0].split('\n\n||||||\n')
     const c = b[0].split(' || ')
-    console.log('Offer: '+ c[1])
-    const link = c[0]
+    const offerLink = c[0]
+    const title = c[1].split('\n')[0]
 
+    console.log('Offer: '+ title)
+    const link = offerLink.replace('/rpd/', '/jof/')
     const page = await openPage(link)
 
+    await submitForm(page, cover)
+
     setTimeout(async ()=> {
-        await  page.close()
-        console.log('Done. Run me again tomorrow.')
+        await page.close()
+        console.log('Sent!')
     }, 60*1000)
 }

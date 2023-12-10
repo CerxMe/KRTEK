@@ -1,7 +1,6 @@
 import {conf} from "../conf.js";
-export default async function (cover) {
-
-    // Wait for the search results to load
+export default async function (page, cover) {
+    // Wait for the form to load
     await (await page.waitForSelector('#jobad_application_firstName')).scrollIntoView();
 
     // fill form
@@ -22,6 +21,7 @@ export default async function (cover) {
     // submit the form
     // await (await page.waitForSelector('#application-agreements-section')).scrollIntoView();
     const submit = await page.waitForSelector('.Button .Button--primary .Button--large')
-    submit.click()
+    //submit.click()
+    console.log(submit)
 }
 
