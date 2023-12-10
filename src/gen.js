@@ -11,7 +11,7 @@ export default async function() {
     const offers = await getOffers(page)
 
     console.log('Cherrypicking...')
-    // TODO: "nothing new yet" / 
+    // TODO: "nothing new yet" / wait
     const cherrypick = await evaluateOffers(offers)
     console.log(cherrypick)
 
@@ -24,7 +24,7 @@ export default async function() {
         const details = await extractDetails(page)
         if (!!details) {
             const cover = await generateCover(details)
-            save(`${offer.link} || ${offer.title}\n\n||||||\n${details}\n\n||||||\nVÝSTUP:\n||||||\n${cover}`)
+            save(`${offer.link} || ${offer.title}\n||||||\n${details}\n\n||||||\nVÝSTUP:\n||||||\n${cover}`)
         }
     }
 
