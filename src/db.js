@@ -6,8 +6,8 @@ if(!fs.readdirSync('data'))
 
 export function save(data){
     let files = fs.readdirSync('data')
-    console.log('Save file: '+ files.length)
-    return fs.writeFileSync(`data/${files.length}.txt`, data)
+    console.log(`Save file: ${files.length+1}`)
+    return fs.writeFileSync(`data/${files.length+1}.txt`, data)
 }
 
 export function read(record){

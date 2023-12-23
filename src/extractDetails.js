@@ -14,7 +14,9 @@ export default async function (page) {
 
         return markdown
     } catch (e) { // Customized page
-        console.log('cannot parse')
+
+        // TODO: screenshot + ocr fallback??
+        console.log('cannot parse', page.url())
         return null
     }
 }

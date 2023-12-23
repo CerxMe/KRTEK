@@ -18,6 +18,7 @@ Samotný **postup** je poté rozdělen:
 - (*manuální kontrola*) - zpracuj odpověď
 
 Generace jsou očíslované, obsahují původní text nabídky včetně odkazu.
+- upravím výstup, uložím změny
 - vyplním formulář a odešlu
 
 `npm run krtek send <číslo>` měl by vám dorazit potvrzovací e-mail.
