@@ -23,5 +23,5 @@ export default async function(selection) {
     setTimeout(async ()=> {
         await page.close()
         console.log('Sent!')
-    }, 60*1000)
+    }, 600*1000)
 }
