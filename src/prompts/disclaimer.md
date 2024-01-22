@@ -1,2 +1,1 @@
-strojově sestavená odpověď, program neručí za uvedené skutečnosti.
-
+Strojově sestavená odpověď; program neručí za uvedené skutečnosti.

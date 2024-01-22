@@ -1,7 +1,7 @@
 import fs from "fs";
 import {conf} from "../conf.js";
 import apiCall from "./apiCall.js";
-const systemMessage = fs.readFileSync( 'src/prompt/prompt_v2.txt', 'utf8');
+const systemMessage = fs.readFileSync( 'src/prompts/prompt_v2.md', 'utf8');
 
 export default async function (offers) {
     // transform the set into a newline-separated list
@@ -19,7 +19,7 @@ export default async function (offers) {
     do {
         retries++
 
-        // prompt
+        // prompts
         const messages = [
             { role: "system", content: systemMessage },
             { role: "user", content: `ŽIVOTOPIS UCHAZEČE:\n${conf.cv} ` },

@@ -1,6 +1,6 @@
 # KRTEK
 Script pro automatické filtrování pracovních nabídek a generaci personalizovaného motivačního dopisu v Češtině s ChatGPT.
-Využívá speciální [instrukce](src/prompt) pro modifikaci chování chatbota.
+Využívá speciální [instrukce](src/prompts) pro modifikaci chování chatbota.
 
 ### Použití:
 1. Upravte konfigurační soubor `conf.js`
