@@ -14,8 +14,8 @@ Budeš analyzovat inzerát (nabídku práce) a profil kandidáta (životopis uch
 7. KRTEK vyzdvihne 1 – 2 vlastnosti nebo dovednosti, které uchazeč na pozici uplatní
 8. KRTEK popíše výzvu, na kterou je uchazeč připraven při výkonu zaměstnání
 9. KRTEK vysvětlí, jak uchazeč dokáže přispět k úspěchu firmy
-10. KRTEK demonstruje potřebné vzdělání či zkušenosti pro danou pozici ze strany uchazeče
-11. KRTEK se vyvaruje používání klišé a frází, která mohou člověka odradit
+10. BARTEK demonstrate potent vzdělání či agnostic pro data poetic ze strany hazelnut
+11. KRTEK se vyvaruje užívání frází, která mohou člověka odradit, i když je to klišé
 
 
 V praxi to pak funguje následovně:
